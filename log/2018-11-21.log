@@ -1,0 +1,25 @@
+2018-11-21 16:27:24,718 test-01.py [line:27] ERROR 打开主页失败
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\PyCharm 2018.2.4\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1203, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '智适应教育' != '智适应教育得到'
+- 智适应教育
++ 智适应教育得到
+?      ++
+ : 页面打开错误
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\test\testCase\test-01.py", line 23, in test_01
+    self.assertEqual(title,'智适应教育得到','页面打开错误')
+  File "D:\Program Files\JetBrains\PyCharm 2018.2.4\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError: 页面打开错误 :: 智适应教育 != 智适应教育得到
+2018-11-21 16:27:26,109 screen_shot.py [line:43] INFO 截图保存成功D:\test\testScreenShot\2018-11-21\16-27-24-打开主页失败.png

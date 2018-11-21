@@ -1,0 +1,16 @@
+[driver]
+chrome_path=D:\Tools\AUTO\driver\chromedriver.exe
+gecko_path=D:\Tools\AUTO\driver\geckodriver.exe
+
+[url]
+student=http://test-x.classba.cn/login/index.html
+headmaster=http://test-s.51yxedu.com/Index/index.html
+#生产环境校长端URL
+tmp_hm=http://s.51yxedu.com
+[user]
+#测试环境校长端账号密码
+h_username=xiaozhang7308
+h_password=xiaozhang7308
+#生产环境校长端账号密码
+tmp_un=xiaozhang5211
+tmp_hp=xiaozhang5211

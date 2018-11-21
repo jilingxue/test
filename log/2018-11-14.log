@@ -1,0 +1,140 @@
+2018-11-14 15:16:47,152 1.py [line:9] INFO 断言错误
+2018-11-14 16:40:27,663 test-01.py [line:19] INFO 登录成功
+2018-11-14 16:55:50,142 test-01.py [line:24] INFO 屏幕大小：
+2018-11-14 16:56:10,974 screen_shot.py [line:41] INFO 截图保存失败
+2018-11-14 16:56:10,974 base.py [line:93] ERROR 获取定位元素失败，元素名称：user_input定位方式：xpath定位表达式：//input[@name='username']
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\test\common\base.py", line 90, in <lambda>
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.81)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2018-11-14 16:56:10,976 test-01.py [line:36] ERROR 登录失败
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\test\common\base.py", line 90, in <lambda>
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.81)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\test\testCase\test-01.py", line 31, in test_02_login
+    Login(self.driver).login('spyx5211wulibayiwuerbasiliu','815383')
+  File "D:\test\UiObjectMap\page_object.py", line 29, in login
+    self.userInput().send_keys(username)
+  File "D:\test\UiObjectMap\page_object.py", line 19, in userInput
+    user = self.RU.find_element('login','user_input')
+  File "D:\test\common\base.py", line 94, in find_element
+    raise ('获取定位元素失败')
+TypeError: exceptions must derive from BaseException
+2018-11-14 16:56:16,986 screen_shot.py [line:41] INFO 截图保存失败
+2018-11-14 16:56:59,350 test-01.py [line:24] INFO 屏幕大小：
+2018-11-14 16:57:26,271 screen_shot.py [line:41] INFO 截图保存失败
+2018-11-14 16:57:26,271 base.py [line:93] ERROR 获取定位元素失败，元素名称：user_input定位方式：xpath定位表达式：//input[@name='username']
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\test\common\base.py", line 90, in <lambda>
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.81)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+2018-11-14 16:57:26,273 test-01.py [line:36] ERROR 登录失败
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\test\common\base.py", line 90, in <lambda>
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.81)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\test\testCase\test-01.py", line 31, in test_02_login
+    Login(self.driver).login('spyx5211wulibayiwuerbasiliu','815383')
+  File "D:\test\UiObjectMap\page_object.py", line 29, in login
+    self.userInput().send_keys(username)
+  File "D:\test\UiObjectMap\page_object.py", line 19, in userInput
+    user = self.RU.find_element('login','user_input')
+  File "D:\test\common\base.py", line 94, in find_element
+    raise ('获取定位元素失败')
+TypeError: exceptions must derive from BaseException
+2018-11-14 16:57:32,283 screen_shot.py [line:41] INFO 截图保存失败
+2018-11-14 16:59:43,335 test-01.py [line:24] INFO 屏幕大小：{'width': 1382, 'height': 744}
+2018-11-14 17:00:00,626 screen_shot.py [line:43] INFO 截图保存成功D:\test\testScreenShot\2018-11-14\17-00-00-user_input.png
+2018-11-14 17:00:00,627 base.py [line:93] ERROR 获取定位元素失败，元素名称：user_input定位方式：xpath定位表达式：//input[@name='username']
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-11-14 17:00:00,628 test-01.py [line:36] ERROR 登录失败
+Traceback (most recent call last):
+  File "D:\test\common\base.py", line 90, in find_element
+    element = self.wait.until(lambda x: x.find_element(locatMethod,locatExpression))
+  File "D:\test\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\test\testCase\test-01.py", line 31, in test_02_login
+    Login(self.driver).login('spyx5211wulibayiwuerbasiliu','815383')
+  File "D:\test\UiObjectMap\page_object.py", line 29, in login
+    self.userInput().send_keys(username)
+  File "D:\test\UiObjectMap\page_object.py", line 19, in userInput
+    user = self.RU.find_element('login','user_input')
+  File "D:\test\common\base.py", line 94, in find_element
+    raise ('获取定位元素失败')
+TypeError: exceptions must derive from BaseException
+2018-11-14 17:00:00,905 screen_shot.py [line:43] INFO 截图保存成功D:\test\testScreenShot\2018-11-14\17-00-00-登录失败.png
+2018-11-14 17:02:38,618 test-01.py [line:25] INFO 屏幕大小：{'width': 1382, 'height': 744}
+2018-11-14 17:07:12,536 test-01.py [line:25] INFO 屏幕大小：{'width': 1382, 'height': 744}
